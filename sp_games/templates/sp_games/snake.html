@@ -1,0 +1,16 @@
+{% extends "sp_games/base_template.html" %}
+{% load static %}
+{% block title %}Snake{% endblock title %}
+
+
+{% block js %}
+	{{ block.super }}
+	<script type="text/javascript" src="{% static "sp_games/snake/main.js" %}"></script>
+	<script type="text/javascript" src="{% static "sp_games/snake/block.js" %}"></script>
+	<script type="text/javascript" src="{% static "sp_games/snake/player.js" %}"></script>
+{% endblock js %}
+
+{% block content %}
+	<div class="snake_canvas"
+		style="width:100%; height:100%"></div>
+{% endblock content %}
