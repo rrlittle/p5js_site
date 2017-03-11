@@ -68,16 +68,20 @@ function Player (cnv, x, y, size, dir){
 
 
 		// update direction
-		if ((keypress == 'D' || keypress == this.cnv.RIGHT) && this.dir != 4){ 
+		//right
+		if ((keypress == 68 || keypress == 39) && this.dir != 4){ 
 			this.dir = 2;
 		}
-		if ((keypress == 'S' || keypress == this.cnv.UP) && this.dir != 3){ 
+		//down
+		if ((keypress == 83 || keypress == 40) && this.dir != 3){ 
 			this.dir = 1;
 		}
-		if ((keypress == 'W' || keypress == this.cnv.DOWN) && this.dir != 1){ 
+		//up
+		if ((keypress == 87 || keypress == 38) && this.dir != 1){ 
 			this.dir = 3;
 		}
-		if ((keypress == 'A' || keypress == this.cnv.LEFT) && this.dir != 2){ 
+		//left
+		if ((keypress == 65 || keypress == 37) && this.dir != 2){ 
 			this.dir = 4;
 		}
 	}

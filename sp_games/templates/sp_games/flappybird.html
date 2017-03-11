@@ -1,0 +1,8 @@
+{% extends "sp_games/base_game_template.html" %}
+{% load static %}
+{% block js %}
+	{{ block.super }}
+	<script type="text/javascript" src="{% static "sp_games/flappybird/main.js" %}"></script>
+	<script type="text/javascript" src="{% static "sp_games/flappybird/bird.js" %}"></script>
+	<script type="text/javascript" src="{% static "sp_games/flappybird/obstacle.js" %}"></script>
+{% endblock js %}

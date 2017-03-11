@@ -86,9 +86,10 @@ function snake_game(p){
 		}
 	}
 
-	p.keyPressed = function(){
-		key_queue.push(p.key);
-	}
+	document.addEventListener('keydown', function(e){
+		console.log(e.keyCode);
+		key_queue.push(e.keyCode);
+	});
 
 }
 		

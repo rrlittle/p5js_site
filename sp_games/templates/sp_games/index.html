@@ -1,0 +1,14 @@
+{% extends "sp_games/base_template.html" %}
+{% block js %}
+	{% include "sp_games/snake.html" %}
+	{% include "sp_games/flappybird.html" %}
+{% endblock js %}
+
+{% block content %}
+	<div class="flappybird_canvas"
+		style="width:100%; height:100%"></div>
+	<br>
+	<div class="snake_canvas"
+		style="width:100%; height:100%"></div>
+
+{% endblock content %}
